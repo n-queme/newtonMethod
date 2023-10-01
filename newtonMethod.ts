@@ -2,13 +2,13 @@
 
 // UTILS
 function calculateNewtonMethod(x: number) {
-    function fx(x: number) {
+    function fc(x: number) {
         return Math.exp(x) + 3 * x - 5
     }
-    function derivateOFfx(x: number) {
+    function derivateOFfc(x: number) {
         return Math.exp(x) + 3
     }
-    const nextX = x - (fx(x) / derivateOFfx(x))
+    const nextX = x - (fc(x) / derivateOFfc(x))
     return nextX
 };
 function delay(ms: number) {
